@@ -31,7 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [   # 它包含在这个Django实例中激活的所有Django应用程序的名称
-    'polls.apps.PollsConfig',
+    'polls.apps.PollsConfig',  # 添加站点polls
     'django.contrib.admin',  # 管理站点
     'django.contrib.auth',  # 认证系统
     'django.contrib.contenttypes',  # 内容类型的框架
