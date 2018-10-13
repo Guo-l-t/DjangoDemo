@@ -5,3 +5,8 @@
 3.初始化数据库：python manage.py migrate
 
 4.创建管理员：python manage.py createsuperuser
+
+django
+
+
+http://47.93.28.78:8888/admin
