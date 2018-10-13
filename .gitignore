@@ -21,8 +21,9 @@ coverage
 test
 
 .idea
+.idea/*
 *.sqlite
-
+*.pyc
 .~*
 
 .pytest_cache
