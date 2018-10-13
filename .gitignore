@@ -23,6 +23,7 @@ test
 .idea
 .idea/*
 *.sqlite
+*.sqlite3
 *.pyc
 .~*
 
