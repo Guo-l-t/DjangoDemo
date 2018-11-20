@@ -31,13 +31,14 @@ ALLOWED_HOSTS = ['*',]
 # Application definition
 
 INSTALLED_APPS = [   # 它包含在这个Django实例中激活的所有Django应用程序的名称
-    'polls.apps.PollsConfig',  # 添加站点polls
+    'polls',  # 添加站点polls
     'django.contrib.admin',  # 管理站点
     'django.contrib.auth',  # 认证系统
     'django.contrib.contenttypes',  # 内容类型的框架
     'django.contrib.sessions',  # 会话框架
     'django.contrib.messages',  # 消息传递框架
     'django.contrib.staticfiles',  # 管理静态文件的框架
+    'birthday',  # 生日提醒模块
 ]
 
 MIDDLEWARE = [
