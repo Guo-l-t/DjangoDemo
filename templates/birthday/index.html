@@ -2,16 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>123</title>
+    <title>---</title>
 </head>
 <body>
-
-
-    <form action="/search" method="get">
-        姓名：<input type="text" id="user_name" name="q">
-        年：<input type="submit" value="搜索">
-        月：<input type="submit" value="搜索">
-        日：<input type="submit" value="搜索">
+    {% for i in bir %}
+    <h1>{{i.year}}</h1>
+    {% endfor %}
+    <form action="/birthday/add" method="get">
+        姓名：<input type="text" name="name"><br/>
+        阴历:<input type="radio" name ='yinyang' value="yin">
+        阳历:<input type="radio" name = 'yinyang' value="yang"><br/>
+        <label>年：</label>
+        <select name="year">
+          <option selected="selected">--请选择--</option>
+          <option value="1966">1966</option>
+          <option value="1967">1967</option>
+          <option value="1968">1968</option>
+        </select>
+        月：<input type="text" value="" name="mouth"><br/>
+        日：<input type="text" value="" name="day">
+        <input type="submit" value="Submit" />
     </form>
 
 </body>
