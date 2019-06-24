@@ -25,7 +25,7 @@ SECRET_KEY = 'w(^c_nwbu+$4t^r52-fe+$0fw4ml^wb)oh=t5bk*1br&&9_f*g'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*',]
+ALLOWED_HOSTS = ['192.168.0.5', '192.168.0.111', '192.168.0.101', '127.0.0.1']
 
 
 # Application definition
@@ -39,6 +39,7 @@ INSTALLED_APPS = [   # 它包含在这个Django实例中激活的所有Django应
     'django.contrib.messages',  # 消息传递框架
     'django.contrib.staticfiles',  # 管理静态文件的框架
     'birthday',  # 生日提醒模块
+    'jiekou',
 ]
 
 MIDDLEWARE = [
@@ -76,16 +77,16 @@ WSGI_APPLICATION = 'DjangoDemo.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',   # 数据库引擎
-        'NAME': 'django_mysql',         # 你要存储数据的库名，事先要创建之
-        'USER': 'root',         # 数据库用户名
-        'PASSWORD': '131322',     # 密码
-        'HOST': 'localhost',    # 主机
-        'PORT': '3306',         # 数据库使用的端口
-    }
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',   # 数据库引擎
+#         'NAME': 's',         # 你要存储数据的库名，事先要创建之
+#         'USER': 'root',         # 数据库用户名
+#         'PASSWORD': 'guolitian',     # 密码
+#         'HOST': 'localhost',    # 主机
+#         'PORT': '3306',         # 数据库使用的端口
+#     }
+# }
 
 
 # Password validation

@@ -20,4 +20,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('polls/', include(('polls.urls', "polls"), namespace="polls")),
     path('birthday/', include(('birthday.urls', "birthday"), namespace="birthday")),
+    path('jiekou/', include(('jiekou.urls', "birthday"), namespace="jiekou")),
 ]

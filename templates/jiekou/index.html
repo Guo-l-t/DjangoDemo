@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>---</title>
+</head>
+<body>
+今日赚上配：
+    <form action="/jiekou/add_jrz" method="get">
+        排重 &nbsp;&nbsp;&nbsp;
+            是<input type="radio" name="query" value=1 checked="true">
+            否<input type="radio" name="query"  value=2>
+            本地排重<input type="radio" name="query"  value="0">
+            &nbsp;&nbsp;<input type="text" name="queryurl" value="http://api.wsaso.com:8080/check/channel_idfa_query"><br/>
+
+        点击 &nbsp;&nbsp;&nbsp;
+            是<input type="radio" name="click" value=0 checked="true" >
+            否<input type="radio" name="click"  value=1>
+            &nbsp;&nbsp;<input type="text" name="clickurl" value="http://api.wsaso.com:8080/click/channel_idfa_click"><br/>
+        回调
+            是<input type="radio" name="callback" value=0>
+            否<input type="radio" name="callback"  value=1 checked="true"> <br/>
+
+        上报 &nbsp;&nbsp;&nbsp;
+             是<input type="radio" name="report" value=1 checked="true">
+             否<input type="radio" name="report"  value=2 >
+             本地上报<input type="radio" name="report"  value=0>
+             &nbsp;&nbsp;<input type="text" name="reporturl" value="http://api.wsaso.com:8080/report/channel_idfa_report"><br/>
+        <br/><br/><br/>
+
+        <table>
+            <tr>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td><input type="text" value="1"/></td>
+                <td>2</td>
+            </tr>
+        </table>
+
+{#        姓名：<input type="text" name="name"><br/>#}
+{#        阴历:<input type="radio" name ='yinyang' value="yin">#}
+{#        阳历:<input type="radio" name = 'yinyang' value="yang"><br/>#}
+{#        <label>年：</label>#}
+{#        <select name="year">#}
+{#          <option selected="selected">--请选择--</option>#}
+{#          <option value="1966">1966</option>#}
+{#          <option value="1967">1967</option>#}
+{#          <option value="1968">1968</option>#}
+{#        </select>#}
+{#        月：<input type="text" value="" name="mouth"><br/>#}
+{#        日：<input type="text" value="" name="day">#}
+        <input type="submit" value="Submit" />
+    </form>
+
+<br/><br/><br/><br/><br/><br/><br/><br/>
+        <form method="post" action="/jiekou/upload/" enctype="multipart/form-data">
+             {% csrf_token %}
+            <input type="file" name="filename" accept="*/*"><br/>
+            <input type="submit" value="上传">
+        </form>
+        <br/><br/><br/>
+{#            <a href="../../resource/jiekou/qwer.txt" download=""#}
+<br/><br/><br/><br/>
+
+        <a href="{% url 'jiekou:download'  %}">下载</a>
+
+</body>
+</html>

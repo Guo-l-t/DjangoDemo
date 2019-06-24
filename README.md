@@ -11,4 +11,13 @@
     python manage.py makemigrations appname
     python manage.py sqlmigrate appname 0001
     python manage.py migrate appname
+    
+    
+创建demo：django-admin startproject jiekou
 
+
+
+a标签url网址：https://blog.csdn.net/heyue_99/article/details/56290018
+    https://blog.csdn.net/weixin_42490528/article/details/84038102
+    https://blog.csdn.net/qq_33867131/article/details/81949022
+    
